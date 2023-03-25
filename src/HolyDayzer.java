@@ -1,3 +1,5 @@
+import java.lang.reflect.Array;
+
 public class HolyDayzer {
     private Holiday[] holidays;
 
@@ -13,5 +15,11 @@ public class HolyDayzer {
         }
 
         return "Essa data não corresponde a nenhum feriado";
+    }
+
+    void seeHolidays() {
+        for(Holiday i: holidays){
+            System.out.println(i.getName());
+        }
     }
 }
