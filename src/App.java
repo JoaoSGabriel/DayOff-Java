@@ -15,5 +15,7 @@ public class App {
         };
 
         HolyDayzer function = new HolyDayzer(holidays);
+
+        System.out.println(function.isHoliday("12/10/2023"));
     }
 }
